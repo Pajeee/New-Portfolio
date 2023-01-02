@@ -27,7 +27,6 @@
             body{
                 width: 100%;
                 min-height: 100vh;
-                background-color: red;
             }
             .main{
                 height:100vh;
@@ -56,20 +55,22 @@
                 padding-right: 5rem;
             }
             .header-links > a{
-                padding-right:2.5rem;
+                padding:0.5rem;
                 text-decoration: none;
-                color:var(--white)
+                color:var(--white);
+                margin-right: 0.5rem;
             }
             .boxes{
+                width: 100%;
                 display: grid;
-                background-color: yellow;
+                grid-template-columns: repeat(2, 40%);
+                margin: auto;
+                justify-content: space-evenly;
             }
             .left-box{
-                width: 40%;
-                margin-left: 4rem;
                 color: var(--white);
-
-                background-color: red;
+                padding-top: 2.5rem;
+                width: 100%;
             }
             .left-box p1, p2{
                 font-family: var(--font2);
@@ -81,8 +82,12 @@
                 font-size: 2rem;
             }
             .right-box{
-                background-color: lime;
-                width: 40%;
+                display: flex;
+                align-items: center;
+            }
+            .right-box img{
+                width:100%;
+                height: 80%;
             }
         </style>
     </head>
@@ -93,17 +98,17 @@
                 <div class="header-links">
                     <a href="#HOME">HOME.</a>
                     <a href="#ABOUTt">ABOUT.</a>
-                    <a href="WORKS">WORKS.</a>
+                    <a href="#WORKS">WORKS.</a>
                 </div>
             </div>
             
             <div class="boxes">
-                <div class="left-box">
+                <div class="left-box item">
                     <p1>MARC FRANCIS</p1>
                     <p2>PROGRAMMER. THAT'S IT.</p2>
                 </div>
-                <div class="right-box">
-                    sdsda
+                <div class="right-box item">
+                    <img alt="LOGO" src="images/Logo.png">
                 </div>
             </div>
             
