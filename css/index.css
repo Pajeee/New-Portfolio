@@ -1,0 +1,123 @@
+:root{
+    --font1:'Space Grotesk', sans-serif;
+    --font2: 'Orbitron', sans-serif;
+
+
+    --white:#b7b7b7;
+    --black:#000000;
+}
+
+/* HOME */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.main{
+    height:100vh;
+    width:100%;
+    background: url("../images/Home.png") no-repeat center center/cover; 
+}
+main{
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font1);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    padding-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+.header > p{
+    padding-left:5rem;
+}
+.header-link{
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 5rem;
+}
+.header-link > a{
+    padding:0.5rem;
+    text-decoration: none;
+    color:var(--white);
+    margin-right: 0.5rem;
+}
+.boxes{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom:5rem
+}
+.left-box{
+    color: var(--white);
+    padding-top: 2.5rem;
+    width: 100%;
+}
+.left-box p1{
+    font-size: 6rem;
+    font-family: var(--font2);
+}
+.left-box p2{
+    font-size: 2rem;
+    font-family: var(--font2);
+}
+.right-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.right-box img{
+    display: block;
+    width:90%;
+    height: 100%;
+}
+.first-line{
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom:3.5rem;
+    height: 0.5rem;
+    background-color: var(--white);
+}
+
+/* QUOTE */
+
+.quote{
+    background-color: var(--black);
+    width: 100%;
+    height: 100vh;
+    margin:auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+}
+.quote p3, p4, p5{
+    color:var(--white);
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font2);
+    display:block;
+}
+.quote p4{
+    font-size: 7.5rem;
+}
+.quote p4 span{
+    color:gold;
+    font-weight:500;
+}
