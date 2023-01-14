@@ -10,109 +10,48 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <style>
-            :root{
-                --font1:'Space Grotesk', sans-serif;
-                --font2: 'Orbitron', sans-serif;
-
-
-                --white:#b7b7b7;
-                --black:#000000;
-            }
-            *{
-                margin:0;
-                padding:0;
-                box-sizing: border-box;
-            }
-            body{
-                width: 100%;
-                min-height: 100vh;
-            }
-            .main{
-                height:100vh;
-                width:100%;
-                background: url("../images/Home.png") no-repeat center center/cover; 
-            }
-            .header{
-                width: 100%;
-                height: 5rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                font-family: var(--font1);
-                font-size: 1.25rem;
-                font-weight: 700;
-                color: var(--white);
-                padding-top: 2.5rem;
-                margin-bottom: 3rem;
-            }
-            .header > p{
-                padding-left:5rem;
-            }
-            .header-links{
-                display: flex;
-                justify-content: space-evenly;
-                padding-right: 5rem;
-            }
-            .header-links > a{
-                padding:0.5rem;
-                text-decoration: none;
-                color:var(--white);
-                margin-right: 0.5rem;
-            }
-            .boxes{
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(2, 40%);
-                margin: auto;
-                justify-content: space-evenly;
-            }
-            .left-box{
-                color: var(--white);
-                padding-top: 2.5rem;
-                width: 100%;
-            }
-            .left-box p1{
-                font-size: 6rem;
-                font-family: var(--font2);
-            }
-            .left-box p2{
-                font-size: 2rem;
-                font-family: var(--font2);
-            }
-            .right-box{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .right-box img{
-                width:90%;
-                height: 100%;
-            }
-        </style>
+        <link rel="stylesheet" href="css/index.css">
+        
     </head>
     <body>
         <div class="main">
-            <div class="header">
-                <p>HEY.</p>
-                <div class="header-links">
-                    <a href="#HOME">HOME.</a>
-                    <a href="#ABOUTt">ABOUT.</a>
-                    <a href="#WORKS">WORKS.</a>
-                </div>
-            </div>
-            
-            <div class="boxes">
-                <div class="left-box">
-                    <p1>MARC FRANCIS</p1>
-                    <p2>PROGRAMMER. THAT'S IT.</p2>
-                </div>
-                <div class="right-box">
-                    <img alt="LOGO" src="images/Logo.png">
-                </div>
-            </div>
-            
+            <main>
 
+                <section>
+                    <article class="header">
+                        <p>HEY.</p>
+                        <article class="header-link">
+                            <a href="#HOME">HOME.</a>
+                            <a href="#ABOUTt">ABOUT.</a>
+                            <a href="#WORKS">WORKS.</a>
+                        </article>
+                    </article>
+                </section>     
+                
+                <section>
+                    <article class="boxes">
+                        <div class="left-box">
+                            <p1>MARC FRANCIS</p1>
+                            <p2>PROGRAMMER. THAT'S IT.</p2>
+                        </div>
+                        <div class="right-box">
+                            <img alt="LOGO" src="images/Logo.png"> 
+                        </div>
+                    </article>
+                </section>
+
+            </main>
+
+                <section>
+                    <div class="quote">
+                        <article>
+                            <p3>"IN A WORLD FULL OF BRONZE AND SILVER</p3>  <br>
+                            <p4>I AM <span>GOLD</span>"</p4>    <br>
+                            <p5>-unknown</p5>
+                        </article>
+                    </div>
+                </section>
+            
         </div>
     </body>
 </html>
